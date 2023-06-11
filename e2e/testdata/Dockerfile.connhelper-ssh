@@ -1,4 +1,4 @@
-FROM docker:test-dind
+FROM docker:test-dind@sha256:af3033aaad3b67cfd2fcefed035ea60b70627d3e7636987ba03f7b3f09f3fc3b
 RUN apk --no-cache add shadow openssh-server && \
   groupadd -f docker && \
   useradd --create-home --shell /bin/sh --password $(head -c32 /dev/urandom | base64) penguin && \

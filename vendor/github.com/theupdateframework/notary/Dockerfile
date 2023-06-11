@@ -1,4 +1,4 @@
-FROM golang:1.14.1
+FROM golang:1.14.1@sha256:38a520b05b971181a5a30d72b74d1b70c63688eb267a4fb376c7476a5c6f885b
 
 RUN apt-get update && apt-get install -y \
 	curl \
